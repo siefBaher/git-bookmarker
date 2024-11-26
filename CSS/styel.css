@@ -1,0 +1,85 @@
+*::selection {
+  background-color: #fec260;
+  color: black;
+}
+body{
+  background-color: #f7ecde;
+}
+@font-face {
+  font-family: text-f-Pacifico;
+  src: url(../Fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: text-f-PTSansCaption;
+  src: url(../Fonts/PTSansCaption-Regular.ttf);
+}
+@font-face {
+  font-family: text-f-Righteous;
+  src: url(../Fonts/Righteous-Regular.ttf);
+}
+
+.text-f-PTSansCaption {
+  font-family: text-f-PTSansCaption;
+}
+header {
+  border-bottom: black dotted 3px;
+}
+.text-header {
+  font-family: text-f-Pacifico;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  background-image: linear-gradient(to bottom, transparent 70%, #fec260 30%);
+  background-size: 100%;
+  width: fit-content;
+}
+.text-header:hover {
+  background-image: linear-gradient(to bottom, transparent 30%, #fec260 30%);
+}
+.text-f-Righteous {
+  font-family: text-f-Righteous;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  background-image: linear-gradient(to right, #3ca55c,#fec260  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i::selection {
+  background-color: transparent;
+}
+.inputs {
+  background-color: #f8f9fa; 
+  border: 1px solid #ced4da; 
+  border-radius: 0.25rem; 
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.inputs:focus {
+  border-color: #fec260 !important; 
+  box-shadow: 0 0 0 0.2rem rgba(254, 193, 96, 0.332) !important; 
+}
+
+.btn-brown{
+  background-color: #d1512d !important;
+  border:1px solid  #de4e26;
+}
+.btn-brown:hover{
+  background-color: #b74121 !important;
+  border:1px solid  #b53b19;
+}
+
+section.form{
+  border-bottom: black dotted 3px;
+}
+.tab p{
+  margin-top: 0.5rem !important;
+}
+
+.btn-limgreen{
+  background-color: #9eb23b;
+}
+.btn-limgreen:hover{
+  background-color: #95aa2c;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="icon" href="IMAGES/titleIcon.png" />
+
+      <!--          sweetAlert2                -->
+  <script src="
+  https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css
+  " rel="stylesheet">
+
+    <!--     styels        -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/styel.css" />
+  </head>
+  <body>
+    <main class="container text-center">
+      <section class="pb-4 mb-4 form">
+        <header class="w-100 d-flex justify-content-center py-5">
+          <h1 class="text-header">Bookmarker</h1>
+        </header>
+        <p class="text-f-Righteous my-4">
+          <i class="fa-bookmark fa-solid"></i>
+          Bookmark your favorite sites
+          <i class="fa-bookmark fa-solid"></i>
+        </p>
+        <div class="d-flex flex-wrap justify-content-start text-start">
+          <label for=" SiteName" class="form-label w-100 text-f-PTSansCaption fw-bold"> 
+            <i class="fa-book-bookmark fa-solid me-2"></i>
+            Site Name
+          </label>
+          <input
+            type="text"
+            id="SiteName"
+            class="form-control text-f-PTSansCaption fs-6 mb-4 inputs"
+            placeholder="Bookmark Name"
+          />
+          <label for=" SiteName" class="form-label w-100 text-f-PTSansCaption fw-bold"> 
+            <i class="fa-link fa-solid me-2"></i>
+            Site URL
+          </label>
+          <input
+            type="text"
+            id="SiteURL"
+            class="form-control text-f-PTSansCaption fs-6 mb-4 inputs"
+            placeholder="website URL"
+          />
+        </div>
+        <button class="btn btn-brown px-5 py-2 text-white ">Submit</button>
+      </section>
+      <section  class="row text-f-PTSansCaption fw-bolder bg-white align-items-center tab">
+        <div class="col-2"><p>index</p></div>
+        <div class="col-6"><p>Website Name</p></div>
+        <div class="col-2"><p>visit</p></div>
+        <div class="col-2"><p>Delete</p></div>
+          <div class="row gx-0  border-top border-2 align-items-center  px-2" id="bookmark">
+            
+          </div>
+      </section>
+    </main>
+
+
+
+
+
+    <!--                 bootstrap js                     -->
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+    <!--      JavaScript           -->
+    <script src="JavaScript/index.js"></script>
+  </body>
+</html>
+
+<!-- <button class="btn btn-success btn-light">
+<a href="${SiteURL.value}" class="text-decoration-none text-white " target="_blank">
+  <i class="fa-solid fa-eye fa-sm"></i> <span>visit</span>
+</a>
+</button> -->
