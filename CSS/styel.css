@@ -17,9 +17,13 @@ body{
   font-family: text-f-Righteous;
   src: url(../Fonts/Righteous-Regular.ttf);
 }
+@font-face {
+  font-family: text-f-BreeSerif;
+  src: url(../Fonts/BreeSerif-Regular.ttf);
+}
 
 .text-f-PTSansCaption {
-  font-family: text-f-PTSansCaption;
+  font-family: text-f-PTSansCaption !important;
 }
 header {
   border-bottom: black dotted 3px;
@@ -82,4 +86,25 @@ section.form{
 }
 .btn-limgreen:hover{
   background-color: #95aa2c;
+}
+
+.lightBox{
+  width: 500px;
+  font-size: 18px;
+}
+
+.text-invalid{
+  font-family: text-f-BreeSerif !important;
+  font-size: 21px;
+} 
+
+.fa-x{
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .lightBox{
+    width: 80%;
+  }
 }

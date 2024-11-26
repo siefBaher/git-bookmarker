@@ -6,13 +6,16 @@
     <title>Bookmark</title>
     <link rel="icon" href="IMAGES/titleIcon.png" />
 
-      <!--          sweetAlert2                -->
-  <script src="
+    <!--          sweetAlert2                -->
+    <script src="
   https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
   "></script>
-  <link href="
+    <link
+      href="
   https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css
-  " rel="stylesheet">
+  "
+      rel="stylesheet"
+    />
 
     <!--     styels        -->
     <link rel="stylesheet" href="CSS/all.min.css" />
@@ -31,17 +34,24 @@
           <i class="fa-bookmark fa-solid"></i>
         </p>
         <div class="d-flex flex-wrap justify-content-start text-start">
-          <label for=" SiteName" class="form-label w-100 text-f-PTSansCaption fw-bold"> 
+          <label
+            for=" SiteName"
+            class="form-label w-100 text-f-PTSansCaption fw-bold"
+          >
             <i class="fa-book-bookmark fa-solid me-2"></i>
             Site Name
           </label>
           <input
             type="text"
             id="SiteName"
-            class="form-control text-f-PTSansCaption fs-6 mb-4 inputs"
+            class="form-control text-f-PTSansCaption fs-6 inputs"
             placeholder="Bookmark Name"
           />
-          <label for=" SiteName" class="form-label w-100 text-f-PTSansCaption fw-bold"> 
+          <div class="alert alert-danger w-75 mt-2 d-none">Site name must contain at least 3 characters</div>
+          <label
+            for=" SiteURL"
+            class="form-label w-100 text-f-PTSansCaption fw-bold mt-4"
+          >
             <i class="fa-link fa-solid me-2"></i>
             Site URL
           </label>
@@ -51,22 +61,48 @@
             class="form-control text-f-PTSansCaption fs-6 mb-4 inputs"
             placeholder="website URL"
           />
+          <div class="alert alert-danger w-75 mt-2 d-none">"The URL you entered is not valid. Please ensure it starts with 'http://' or 'https://' and is correctly formatted."</div>
         </div>
-        <button class="btn btn-brown px-5 py-2 text-white ">Submit</button>
+        <button class="btn btn-brown px-5 py-2 text-white">Submit</button>
       </section>
-      <section  class="row text-f-PTSansCaption fw-bolder bg-white align-items-center tab">
+      <section
+        class="row text-f-PTSansCaption fw-bolder bg-white align-items-center tab"
+      >
         <div class="col-2"><p>index</p></div>
         <div class="col-6"><p>Website Name</p></div>
         <div class="col-2"><p>visit</p></div>
         <div class="col-2"><p>Delete</p></div>
-          <div class="row gx-0  border-top border-2 align-items-center  px-2" id="bookmark">
-            
-          </div>
+        <div
+          class="row gx-0 border-top border-2 align-items-center px-2"
+          id="bookmark"
+        ></div>
       </section>
     </main>
-
-
-
+    <div
+  class="lightBoxCountaner bg-dark bg-opacity-25 position-fixed top-0 bottom-0 w-100 d-flex justify-content-center d-none"
+>
+  <div
+    class="lightBox bg-light position-absolute top-50 translate-middle-y rounded text-f-PTSansCaption py-4"
+  >
+    <div class="d-flex justify-content-between align-items-center px-4  mb-4 ">
+      <div>
+        <i class="fa-solid fa-circle text-danger fa-lg me-1"></i>
+        <i class="fa-solid fa-circle text-warning fa-lg me-1"></i>
+        <i class="fa-solid fa-circle text-success opacity-75 fa-lg"></i>
+      </div>
+      <i class="fa-solid fa-x fa-lg"></i>
+    </div>
+    <p class="text-invalid px-3 mb-3">Site Name or Url is not valid, Please follow the rules below :</p>
+    <div class="container ps-4 d-flex align-items-center ">
+      <i class="fa-regular fa-circle-right text-danger fa-lg me-2"></i>
+      <p class="m-0">Site name must contain at least 3 characters</p>
+    </div>
+    <div class="container ps-4 d-flex align-items-center my-3">
+      <i class="fa-regular fa-circle-right text-danger fa-lg me-2"></i>
+      <p class="m-0">Site URL must be a valid one</p>
+    </div>
+  </div>
+</div>
 
 
     <!--                 bootstrap js                     -->
@@ -76,8 +112,3 @@
   </body>
 </html>
 
-<!-- <button class="btn btn-success btn-light">
-<a href="${SiteURL.value}" class="text-decoration-none text-white " target="_blank">
-  <i class="fa-solid fa-eye fa-sm"></i> <span>visit</span>
-</a>
-</button> -->
